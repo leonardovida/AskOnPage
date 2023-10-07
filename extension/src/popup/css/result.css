@@ -1,0 +1,27 @@
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(245, 248, 249);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Helvetica", sans-serif;
+    font-size: 12pt;
+}
+.result-item:hover {
+    background-color: rgb(245, 248, 249);
+}
+.result-text {
+    flex-grow: 1;
+}
+.score-box {
+    align-self: flex-start;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background-color: rgb(245, 248, 249);
+    color: #333;
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.8em;
+}
