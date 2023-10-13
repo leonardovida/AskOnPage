@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SemanticFinder Settings</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+<div class="container">
+    <label for="modelSelector">Model Selector:</label>
+    <select id="modelSelector">
+        <option value="Xenova/all-MiniLM-L6-v2">all-MiniLM-L6-v2 (23 MB)
+        </option>
+        <option value="Supabase/gte-small" selected>gte-small (34 MB)
+        </option>
+        <option value="Xenova/kobert">kobert (92 MB)</option>
+        <option value="Xenova/bge-small-en-v1.5">bge-small-en-v1.5 (34 MB)</option>    
+    </select>
+
+    <br><br>
+
+    <label for="minCharsInput">Min # chars to split by:</label>
+    <input type="number" id="minCharsInput" min="2" value="50">
+
+    <br><br>
+    <button id="restoreButton" class="rectangular-button">Restore Defaults</button>
+
+    <button id="saveButton" class="rectangular-button">Save Settings</button>
+</div>
+
+<script src="options.js"></script>
+</body>
+
+</html>
